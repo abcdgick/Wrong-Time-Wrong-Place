@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="menuPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uas_jack.Menu.MenuController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="974.0" layoutY="300.0" opacity="0.0" visible="false" />
+      <ImageView fx:id="titleImage" fitHeight="140.0" fitWidth="753.0" layoutX="-13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@TITLE.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="startImage" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Start.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="loadImage" fitHeight="83.0" fitWidth="163.0" layoutX="17.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@LOAD.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="optionImage" fitHeight="150.0" fitWidth="200.0" layoutX="12.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@OPTION.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="extrasImage" fitHeight="150.0" fitWidth="200.0" layoutX="12.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@EXTRAS.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="quitImage" fitHeight="83.0" fitWidth="200.0" layoutX="-13.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@QUIT.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="start" layoutX="15.0" layoutY="200.0" mnemonicParsing="false" onAction="#start" opacity="0.0" prefHeight="83.0" prefWidth="200.0" text="Start" />
+      <Button fx:id="load" layoutX="27.0" layoutY="320.0" mnemonicParsing="false" onAction="#load" opacity="0.0" prefHeight="60.0" prefWidth="141.0" text="Load" />
+      <Button fx:id="option" layoutX="22.0" layoutY="440.0" mnemonicParsing="false" onAction="#option" opacity="0.0" prefHeight="67.0" prefWidth="180.0" text="Option" />
+      <Button fx:id="extras" layoutX="23.0" layoutY="550.0" mnemonicParsing="false" onAction="#extras" opacity="0.0" prefHeight="67.0" prefWidth="180.0" text="Extras" />
+      <Button fx:id="quit" layoutX="19.0" layoutY="670.0" mnemonicParsing="false" onAction="#quit" opacity="0.0" prefHeight="67.0" prefWidth="108.0" text="Quit" />
+      <ImageView fx:id="backImage" fitHeight="67.0" fitWidth="124.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BACK.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="back" disable="true" mnemonicParsing="false" onAction="#back" opacity="0.0" prefHeight="42.0" prefWidth="115.0" text="Back" />
+      <GridPane fx:id="badEnd" disable="true" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="800.0" vgap="10.0" visible="false">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView fx:id="grid00" fitHeight="144.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../Prolog/8.jpg" />
+               </image></ImageView>
+            <ImageView fx:id="grid10" fitHeight="144.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../Malam/4.png" />
+               </image></ImageView>
+            <ImageView fx:id="grid20" fitHeight="144.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../Pagi/0.png" />
+               </image></ImageView>
+            <ImageView fx:id="grid01" fitHeight="144.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../Freedom/1b.png" />
+               </image></ImageView>
+            <ImageView fx:id="grid11" fitHeight="144.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../Freedom/3b.png" />
+               </image></ImageView>
+            <ImageView fx:id="grid21" fitHeight="144.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../Freedom/2-d2.png" />
+               </image></ImageView>
+            <ImageView fx:id="grid1" fitHeight="144.0" fitWidth="256.0" layoutX="282.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Tru/8-6.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="grid12" fitHeight="144.0" fitWidth="256.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../Tru/6.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="grid2" fitHeight="144.0" fitWidth="256.0" layoutX="10.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../Tru/9-3.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+      <ImageView fx:id="volumeImage" disable="true" fitHeight="67.0" fitWidth="264.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@MUSIC%20VOLUME.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="resetImage" disable="true" fitHeight="67.0" fitWidth="322.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@RESET%20PROGRESS.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="reset" disable="true" mnemonicParsing="false" onAction="#reset" opacity="0.0" prefHeight="32.0" prefWidth="294.0" text="Reset" />
+      <Slider fx:id="volumeSlider" disable="true" layoutX="49.0" layoutY="329.0" opacity="0.0" prefHeight="41.0" prefWidth="300.0" showTickLabels="true" showTickMarks="true" stylesheets="@Style.css" value="100.0" />
+      <Label fx:id="volumeLabel" disable="true" layoutX="431.0" layoutY="329.0" opacity="0.0" stylesheets="@Style.css" text="Label" />
+   </children>
+</AnchorPane>

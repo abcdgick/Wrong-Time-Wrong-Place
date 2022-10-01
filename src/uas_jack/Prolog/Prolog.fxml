@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane id="AnchorPane" fx:id="prologPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #dff4f9;" stylesheets="@Font.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uas_jack.Prolog.PrologController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="450.0" fitWidth="800.0" layoutX="200.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@1.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="dialog" layoutX="200.0" layoutY="477.0" prefHeight="231.0" prefWidth="800.0" wrapText="true" />
+      <Button fx:id="help" disable="true" layoutX="487.0" layoutY="644.0" mnemonicParsing="false" onAction="#bantu" opacity="0.0" prefHeight="47.0" prefWidth="75.0" stylesheets="@../Choice.css" text="Bantu" />
+      <Button fx:id="cuek" disable="true" layoutX="663.0" layoutY="643.0" mnemonicParsing="false" onAction="#cuek" opacity="0.0" prefHeight="47.0" prefWidth="75.0" stylesheets="@../Choice.css" text="Cuek" />
+      <Button fx:id="next" layoutX="954.0" layoutY="732.0" mnemonicParsing="false" onAction="#nextDialog" stylesheets="@Font.css" text="NEXT" />
+      <ButtonBar fx:id="Config" layoutX="428.0" layoutY="734.0" prefHeight="40.0" prefWidth="350.0">
+        <buttons>
+            <Button fx:id="save1" mnemonicParsing="false" onAction="#save" text="Save" />
+          <Button fx:id="load1" mnemonicParsing="false" onAction="#load" text="Load" />
+            <Button fx:id="title1" mnemonicParsing="false" onAction="#title" text="Title" />
+            <Button fx:id="quit1" mnemonicParsing="false" onAction="#quit" text="Quit" />
+        </buttons>
+         <stylesheets>
+            <URL value="@Font.css" />
+         </stylesheets>
+      </ButtonBar>
+      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="500.0" layoutY="14.0" opacity="0.0" />
+      <Button fx:id="switchh" layoutX="1021.0" layoutY="579.0" mnemonicParsing="false" onAction="#switchScene" stylesheets="@Font.css" text="Next Scene" visible="false" />
+      <Button fx:id="tryAgain" layoutX="61.0" layoutY="568.0" mnemonicParsing="false" onAction="#tryAgain" stylesheets="@Font.css" text="Try Again" visible="false" />
+   </children>
+</AnchorPane>

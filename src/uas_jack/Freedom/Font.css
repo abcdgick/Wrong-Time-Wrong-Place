@@ -1,0 +1,73 @@
+.button {
+    -fx-background-color: #239c9c;
+    -fx-background-radius: 30 0 0 30;
+    -fx-font-size: 16;
+}
+
+.button:hover{
+    -fx-background-color: #07f7f7;
+    -fx-background-radius: 30 0 0 30;
+    -fx-font-size: 18;
+}
+
+.button:pressed{
+    -fx-background-color: #239c9c;
+    -fx-background-radius: 30 0 0 30;
+    -fx-font-size: 16;
+}
+
+#next {
+    -fx-background-color: #9c3023;
+    -fx-background-radius: 0 50 50 0;
+    -fx-font-size: 18;
+}
+
+#next:hover{
+    -fx-background-color: #f79307;
+    -fx-background-radius: 0 50 50 0;
+    -fx-font-size: 20;
+}
+
+#next:pressed{
+    -fx-background-color: #9c3023;
+    -fx-background-radius: 0 50 50 0;
+    -fx-font-size: 18;
+}
+
+#switchh {
+    -fx-background-color: #179B77;
+    -fx-background-radius: 0 50 50 0;
+    -fx-font-size: 22;
+}
+
+#switchh:hover{
+    -fx-background-color: #0cf0b2;
+    -fx-background-radius: 0 50 50 0;
+    -fx-font-size: 24;
+}
+
+#switchh:pressed{
+    -fx-background-color: #179B77;
+    -fx-background-radius: 0 50 50 0;
+    -fx-font-size: 22;
+}
+
+#tryAgain {
+    -fx-background-color: #179B77;
+    -fx-background-radius: 50 0 0 50;
+    -fx-font-size: 22;
+}
+
+#tryAgain:hover{
+    -fx-background-color: #0cf0b2;
+    -fx-background-radius: 50 0 0 50;
+    -fx-font-size: 24;
+}
+
+#tryAgain:pressed{
+    -fx-background-color: #179B77;
+    -fx-background-radius: 50 0 0 50;
+    -fx-font-size: 22;
+}
+
+
